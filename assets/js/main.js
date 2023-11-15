@@ -14,10 +14,10 @@ clickButton.addEventListener('click', () => {
         div.classList.add('weiss', 'rechteck');
         umwickelnDiv.appendChild(div);
     } else {
-        div.classList.add('rechteck');
-        umwickelnDiv.appendChild(div);
+        div.classList.add('rechteck'); // da jede div die class .rechteck benötigt könnte man die auch außerhalb der condition adden und würde dann nur das if mit add class weiss benötigt
+        umwickelnDiv.appendChild(div); // das append könnte dann auch außerhalb der conditions stehen
     }
-    counter++;
+    counter++; // Counter wird erst nach der if bedingung hochgezählt weil er sonst bei dem ersten klick bei der if bedingung schon bei eins wäre
 })
 
 
